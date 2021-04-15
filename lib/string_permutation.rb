@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pry'
 
 def permutate_string(result, input)
@@ -8,7 +10,7 @@ def permutate_string(result, input)
     puts result + input[1] + input[0]
   end
 
-  (0...input.length).step(1).each do |i|
+  (0...input.length).map do |i|
     first = result + input[i]
     second = (i > 0 ? input[0..(i-1)] : '') + (input[(i+1)..-1] || '')
     permutate_string(first, second)
