@@ -4,6 +4,10 @@
 
 ```bash
 git clone git@github.com:jpdwalker/string_permutations.git
+
+OR
+
+git clone https://github.com/jpdwalker/string_permutations.git
 ```
 
 ### 2a. Install Ruby if you have not already
